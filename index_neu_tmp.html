@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.jetbeds.com//favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://www.jetbeds.com//favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="https://www.jetbeds.com//apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="https://www.jetbeds.com//android-chrome-192x192.png">
+    <link rel="icon" sizes="256x256" href="https://www.jetbeds.com//android-chrome-256x256.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Jetbeds Newsletter - Exklusive Business Class Angebote</title>
+    <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+    <style type="text/css">
+        /* Globale Resets & Stile */
+        body, table, td, a { 
+            -webkit-text-size-adjust: 100%; 
+            -ms-text-size-adjust: 100%; 
+        }
+        table, td { 
+            mso-table-lspace: 0pt; 
+            mso-table-rspace: 0pt; 
+        }
+        img { 
+            -ms-interpolation-mode: bicubic; 
+            border: 0; 
+            height: auto; 
+            line-height: 100%; 
+            outline: none; 
+            text-decoration: none; 
+            display: block;
+        }
+        table { 
+            border-collapse: collapse !important; 
+        }
+        body { 
+            height: 100% !important; 
+            margin: 0 !important; 
+            padding: 0 !important; 
+            width: 100% !important; 
+            background-color: #f5f5f5;
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* Verhindert, dass Apple Links blau färbt */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* Basis Typografie */
+        .main-text {
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            color: #333333;
+            font-size: 14px;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .heading {
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            color: #333333;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .price {
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            color: #333333;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        .destination-tag {
+            background-color: #fec500;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .deal-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+            background-color: #ffffff;
+        }
+
+        .deal-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #ff4700 0%, #e63900 100%);
+            border: none;
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1;
+            text-decoration: none;
+            padding: 16px 32px;
+            color: #ffffff;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(255, 71, 0, 0.3);
+        }
+
+        /* Responsive Stile für mobile Geräte */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+
+            .fluid {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+
+            .stack-column-center {
+                text-align: center !important;
+            }
+            
+            .nav-td {
+                padding: 5px 10px !important;
+            }
+
+            .mobile-padding {
+                padding: 15px !important;
+            }
+
+            .mobile-center {
+                text-align: center !important;
+            }
+
+            .price {
+                font-size: 18px !important;
+            }
+        }
+
+        /* Dark Mode Support */
+        @media (prefers-color-scheme: dark) {
+            .dark-mode-bg {
+                background-color: #1a1a1a !important;
+            }
+            .dark-mode-text {
+                color: #ffffff !important;
+            }
+        }
+    </style>
+</head>
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f5f5f5;">
+    <center style="width: 100%; background-color: #f5f5f5;">
+        <!--[if mso | IE]>
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="background-color: #ffffff;">
+        <tr>
+        <td>
+        <![endif]-->
+
+        <!-- Hauptcontainer der E-Mail -->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; box-shadow: 0 0 20px rgba(0,0,0,0.1); border-radius: 0;" class="email-container">
+            
+            <!-- HEADER / LOGO -->
+            <tr>
+                <td style="padding: 30px 20px 20px 20px;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center" valign="middle">
+                                <a href="https://www.jetbeds.com/de_de">
+                                    <img src="https://img.mailinblue.com/5011328/images/content_library/original/62f50115885fd132a26759c3.png" width="160" alt="Jetbeds - Premium Business Class Flüge" style="display: block; max-width: 150px;">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- EINFÜHRUNGSTEXT -->
+            <tr>
+                <td style="padding: 0 30px 20px 30px;" class="mobile-padding">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td class="main-text" style="text-align: left;">
+                                <span style="font-weight: 600; font-size: 16px; color: #333333;">
+                                    Guten Abend,
+                                </span>
+                                <br>
+                                diese Woche haben wir wieder exklusive Business Class Angebote für Sie zusammengestellt. Entdecken Sie Traumziele zu unschlagbaren Preisen und fliegen Sie mit maximalem Komfort.
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- 6 ANGEBOTE - 2 Spalten Layout -->
+            <!-- Reihe 1 -->
+            <tr>
+                <td valign="top" style="padding: 0 20px;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <!-- New York -->
+                            <td class="stack-column-center" valign="top" style="width: 50%; padding: 10px;">
+                                <a href="https://www.jetbeds.com/de_de/deals/business-class-flug-nach-new-york-6" style="text-decoration: none; color: #333333; display: block;" class="deal-card">
+                                    <img src="https://www.jetbeds.com/_Resources/Persistent/28cf0464172267ea4e84223539da53fcb8572153/CC_Sitz_SK-664x275.png" width="270" alt="Business Class Sitz nach New York - SAS Scandinavian Airlines" class="fluid" style="border-radius: 10px 10px 0 0; width: 100%; max-width: 270px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr><td style="padding: 15px; font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;">
+                                            <span class="destination-tag">ab Deutschland</span>
+                                            <h3 class="heading" style="font-size: 18px; margin: 12px 0 8px 0;">New York</h3>
+                                            <p style="margin: 0 0 8px 0; color: #666666; font-weight: 400; font-size: 14px;">SAS Scandinavian Airlines, Business Class</p>
+                                            <div class="price">ab 1.848 €</div>
+                                        </td></tr>
+                                    </table>
+                                </a>
+                            </td>
+                            <!-- Hong Kong -->
+                            <td class="stack-column-center" valign="top" style="width: 50%; padding: 10px;">
+                                <a href="https://www.jetbeds.com/de_de/deals/business-class-flug-nach-hong-kong-13" style="text-decoration: none; color: #333333; display: block;" class="deal-card">
+                                    <img src="https://www.jetbeds.com/_Resources/Persistent/e4fdcb73b05a73ab2a21a929c5543fa65d9e0484/C_Sitz6-662x275.jpg" width="270" alt="Business Class Sitz nach Hong Kong - Turkish Airlines" class="fluid" style="border-radius: 10px 10px 0 0; width: 100%; max-width: 270px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr><td style="padding: 15px; font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;">
+                                            <span class="destination-tag">ab Brüssel</span>
+                                            <h3 class="heading" style="font-size: 18px; margin: 12px 0 8px 0;">Hong Kong</h3>
+                                            <p style="margin: 0 0 8px 0; color: #666666; font-weight: 400; font-size: 14px;">Turkish Airlines, Business Class</p>
+                                            <div class="price">ab 1.497 €</div>
+                                        </td></tr>
+                                    </table>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <!-- Reihe 2 -->
+            <tr>
+                <td valign="top" style="padding: 0 20px;">
+                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <!-- Jakarta -->
+                            <td class="stack-column-center" valign="top" style="width: 50%; padding: 10px;">
+                                <a href="https://www.jetbeds.com/de_de/deals/business-class-flug-nach-jakarta-2" style="text-decoration: none; color: #333333; display: block;" class="deal-card">
+                                    <img src="https://www.jetbeds.com/_Resources/Persistent/a201214ec65519183cfdf444df57f3eca8177e1b/C_Sitz8-664x275.jpg" width="270" alt="Business Class Sitz nach Jakarta - Turkish Airlines" class="fluid" style="border-radius: 10px 10px 0 0; width: 100%; max-width: 270px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr><td style="padding: 15px; font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;">
+                                            <span class="destination-tag">ab Amsterdam</span>
+                                            <h3 class="heading" style="font-size: 18px; margin: 12px 0 8px 0;">Jakarta</h3>
+                                            <p style="margin: 0 0 8px 0; color: #666666; font-weight: 400; font-size: 14px;">Turkish Airlines, Business Class</p>
+                                            <div class="price">ab 1.462 €</div>
+                                        </td></tr>
+                                    </table>
+                                </a>
+                            </td>
+                            <!-- Cancun -->
+                            <td class="stack-column-center" valign="top" style="width: 50%; padding: 10px;">
+                                <a href="https://www.jetbeds.com/de_de/deals/business-class-flug-nach-cancun-3" style="text-decoration: none; color: #333333; display: block;" class="deal-card">
+                                    <img src="https://www.jetbeds.com/_Resources/Persistent/a9d1845962b4336f0c9f02493a4334a67ead9af9/DE%20Prime%20Seat%20C-664x275.png" width="270" alt="Business Class Sitz nach Cancun - Condor" class="fluid" style="border-radius: 10px 10px 0 0; width: 100%; max-width: 270px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr><td style="padding: 15px; font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;">
+                                            <span class="destination-tag">ab Frankfurt</span>
+                                            <h3 class="heading" style="font-size: 18px; margin: 12px 0 8px 0;">Cancun</h3>
+                                            <p style="margin: 0 0 8px 0; color: #666666; font-weight: 400; font-size: 14px;">Condor, Business Class</p>
+                                            <div class="price">ab 1.687 €</div>
+                                        </td></tr>
+                                    </table>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <!-- Reihe 3 -->
+            <tr>
+                <td valign="top" style="padding: 0 20px;">
+                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <!-- Malediven -->
+                            <td class="stack-column-center" valign="top" style="width: 50%; padding: 10px;">
+                                <a href="https://www.jetbeds.com/de_de/deals/business-class-flug-nach-bangkok-19" style="text-decoration: none; color: #333333; display: block;" class="deal-card">
+                                    <img src="https://www.jetbeds.com/_Resources/Persistent/85b1c54ff102896577f0019516d1f04e73aacf01/C_Sitz_2_%3DS-664x275.png" width="270" alt="Business Class Sitz nach Bangkok - Austrian Airlines" class="fluid" style="border-radius: 10px 10px 0 0; width: 100%; max-width: 270px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr><td style="padding: 15px; font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;">
+                                            <span class="destination-tag">ab Oslo</span>
+                                            <h3 class="heading" style="font-size: 18px; margin: 12px 0 8px 0;">Bangkok</h3>
+                                            <p style="margin: 0 0 8px 0; color: #666666; font-weight: 400; font-size: 14px;">Austrian Airlines, Business Class</p>
+                                            <div class="price">ab 1.721 €</div>
+                                        </td></tr>
+                                    </table>
+                                </a>
+                            </td>
+                            <!-- Tokyo -->
+                            <td class="stack-column-center" valign="top" style="width: 50%; padding: 10px;">
+                                <a href="https://www.jetbeds.com/de_de/deals/business-class-flug-nach-havanna-3" style="text-decoration: none; color: #333333; display: block;" class="deal-card">
+                                    <img src="https://www.jetbeds.com/_Resources/Persistent/0b0fe45e391462478e6514fa05b7b6f6409e172e/IB%20Sitz%281%29-664x275.png" width="270" alt="Business Class Sitz nach Havanna - Iberia" class="fluid" style="border-radius: 10px 10px 0 0; width: 100%; max-width: 270px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr><td style="padding: 15px; font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;">
+                                            <span class="destination-tag">ab Wien</span>
+                                            <h3 class="heading" style="font-size: 18px; margin: 12px 0 8px 0;">Havanna</h3>
+                                            <p style="margin: 0 0 8px 0; color: #666666; font-weight: 400; font-size: 14px;">Iberia, Business Class</p>
+                                            <div class="price">ab 1.819 €</div>
+                                        </td></tr>
+                                    </table>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- BUTTON "ALLE DEALS" -->
+            <tr>
+                <td style="padding: 30px 20px; text-align: center;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                        <tr>
+                            <td style="border-radius: 8px;">
+                                <a href="https://www.jetbeds.com/de_de/deals" target="_blank" class="cta-button" role="button" aria-label="Alle Jetbeds Deals anzeigen">
+                                    Alle Deals ansehen
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- ABSCHLUSSTEXT -->
+            <tr>
+                <td style="padding: 0 30px 30px 30px;" class="mobile-padding">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td class="main-text" style="text-align: left;">
+                                Vielen Dank fürs Lesen und bis zum nächsten Mal.<br><br>
+                                <span style="font-weight: 600;">Ihr Jetbeds Team</span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- FUSSZEILE (Footer) -->
+            <tr>
+                <td style="padding: 30px 20px; background-color: #f8f8f8; border-top: 1px solid #e0e0e0;">
+                    <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td style="font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #888888; text-align: center;">
+                                <!-- Social Media Links -->
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: 0 auto 15px auto;">
+                                    <tr>
+                                        <td style="padding: 0 10px;">
+                                            <a href="https://www.facebook.com/jetbeds" style="color: #555555; text-decoration: none;" aria-label="Jetbeds auf Facebook">Facebook</a>
+                                        </td>
+                                        <td style="padding: 0 10px;">
+                                            <a href="https://instagram.com/jetbeds" style="color: #555555; text-decoration: none;" aria-label="Jetbeds auf Instagram">Instagram</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                                <p style="margin: 0 0 10px 0; font-weight: 500; font-size: 11px;">
+                                    Copyright © 2025 jetbeds.com, Alle Rechte vorbehalten
+                                </p>
+                                <p style="margin: 0; font-size: 11px; line-height: 16px;">
+                                    Sie erhalten diesen Newsletter, weil Sie sich für unsere exklusiven Angebote angemeldet haben.<br>
+                                    <a href="{{ unsubscribe }}" style="color: #ff4700; text-decoration: underline;" aria-label="Newsletter abbestellen">Hier abmelden</a> | 
+                                    <a href="https://www.jetbeds.com/de_de/jetbeds/impressum" style="color: #555555; text-decoration: underline;" aria-label="Impressum lesen">Impressum</a> |
+                                    <a href="https://www.jetbeds.com/de_de/links/datenschutz" style="color: #555555; text-decoration: underline;" aria-label="Datenschutzerklärung lesen">Datenschutz</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+        <!-- Ende Hauptcontainer -->
+
+        <!--[if mso | IE]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+    </center>
+</body>
+</html>
